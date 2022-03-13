@@ -2,7 +2,7 @@
     import Nav from "../components/nav.svelte"
 </script>
 
-<div class="p-8 max-w-6xl max-auto">
+<div class="p-8 max-auto">
     <Nav/>
     <slot></slot>
 </div>

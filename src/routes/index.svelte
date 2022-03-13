@@ -32,11 +32,11 @@
     }
 </script>
 
-<h1 class="text-4xl text-center my-8 uppercase">Pokedex of Generation 1</h1>
+<h1 class="text-4xl text-center my-8 uppercase">Pokedex</h1>
 
 <input class="w-full rounded-md text-lg p-4 border-2 border-grey-200" bind:value={searchTerm} type="text" placeholder="Search Pokemon">
 
-<div class="py-4 grid gap-4 md:grid-cols-2 grid-cols-1">
+<div class="py-4 grid gap-4 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
     {#each filteredPokemon as poke}
         <PokemonCard poke={poke}/>
     {/each}
